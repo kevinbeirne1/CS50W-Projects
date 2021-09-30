@@ -1,5 +1,5 @@
 # CS50W-Project 0 - Search
-Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. [Main Branch](https://github.com/kevinbeirne1/CS50W-Projects) 
+Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
 
 ---
 
@@ -35,5 +35,7 @@ Your website must meet the following requirements.
 #### Aesthetics 
 - The CSS you write should match Google’s own aesthetics as best as possible.
 
+---
 
+Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. [Main Branch](https://github.com/kevinbeirne1/CS50W-Projects) 
 
