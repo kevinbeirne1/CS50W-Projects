@@ -3,7 +3,7 @@ Design a front-end for Google Search, Google Image Search, and Google Advanced S
 
 ---
 
-## _Project Description_
+## _Project Overview_
 This project introduces the fundamental aspect of creating a website with HTML and CSS. It was very instructive to look at an established website and attempt to reverse engineer it's CSS. 
 
 ### Skills Utilized
