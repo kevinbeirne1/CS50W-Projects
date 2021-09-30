@@ -7,7 +7,7 @@ Create clones of Google Search, Google Image Search, and Google Advanced Search 
 ## [Project 1 - Wiki](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_1-Wiki)
 Create Wiki site 
 
-### New Skills Required
+##### New Skills Required
 - Django 
   - Templates 
   - Views
