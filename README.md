@@ -12,7 +12,8 @@ This project introduces creating a website using the Django framework. Project 0
   - Templates
   - Views
   - Forms
-- SCSS   
+- SCSS/CSS
+- HTML   
 
 
 ---
