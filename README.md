@@ -6,9 +6,6 @@ Design a Twitter-like social network website for making posts and following user
 ## _Project Overview_
 This project is the culmination of all that we've learned up to this point. We are given templates for Registration/Log In of users and are required to develop all the other aspects of the website. 
 
-In the accompanying course [lecture](https://cs50.harvard.edu/web/2020/notes/7/) we were briefly introduced to Test-Driven-Development. Given the brief introduction and my sparse knowledge of testing, I decided to take a detour from the course to complete the excellent book [Test-Driven Development with Python](https://www.obeythetestinggoat.com/). I then attempted to utilise the TDD methodology in completing this project. 
-
-I started by translating the Project Specifications (detailed below) into a markdown file ([project_brief.md](https://github.com/kevinbeirne1/CS50W-Projects/blob/Project_4-Network/project_brief.md)) with checkboxes for all of the requirements. This was then used as the basis for creating a functional test for a specific requirement, and 
 
 ### Skills Utilized
 - Outside-In Test Driven Development design principles, including
@@ -23,12 +20,41 @@ I started by translating the Project Specifications (detailed below) into a mark
   - Class-Based-Views
   - ModelForms
 
-- Javascript
+- Javascript/JQuery
   - Event Listeners
   - HTML DOM manipulation 
   - API Fetch requests
 - HTML
 - SCSS/CSS, including [Bootstrap](https://getbootstrap.com/docs/)
+
+
+### Test Driven Development
+In the accompanying course [lecture](https://cs50.harvard.edu/web/2020/notes/7/) we were briefly introduced to Test-Driven-Development. Given the brief introduction and my sparse knowledge of testing, I decided to take a detour from the course to complete the excellent book [Test-Driven Development with Python](https://www.obeythetestinggoat.com/). I then attempted to utilise the TDD methodology in completing this project. 
+
+I started by:
+- Translating the Project Specifications (detailed below) into a markdown file ([project_brief.md](https://github.com/kevinbeirne1/CS50W-Projects/blob/Project_4-Network/project_brief.md)) with checkboxes for all of the requirements. 
+- `project_brief.md` was then used as the basis for creating a failing Functional Test (FT) for a specific requirement
+-  Creating failing Unit Tests based on the FT
+-  Generating/Modifying code to pass the tests
+-  Repeating for each of the requirements
+
+Working from the Outside-In TDD was really beneficial for me. I had initially started this project prior to reading the TDD above and was essentially trying an inside-out approach. I started by generating my models, and then writing tests for the code I'd already written. This led to me massively overengineering my models and making them more complicated than they needed to be. See [code_example-TDD-vs-non_TDD.md](https://github.com/kevinbeirne1/CS50W-Projects/blob/Project_4-Network/code_example-TDD-vs-non_TDD.md) for an example of this. 
+
+### Things to work on?
+- At this poing I do not use any mocks in my testing
+  - If for nothing other than a learning exercise it would be useful to try go back isolate the unit tests from the database
+- The CSS/Bootstrap is very rudimentary. 
+  - My currently level of knowledge of Bootstrap capabilities is relatively low, and I prioritised working on other aspects of the project instead of improving my Bootstrap
+- Write the Javascript in React
+  - JQuery was used in the TDD book and used it in this project because of familiarity. React also seems commonly used library and would be useful to learn
+- Deploy the project to a server for ease of displaying my skills
+- Refactor the 4 separate like/unlike and follow/unfollow views into 2 views as most of their code is duplicated
+  - Quick and dirty method was to create separate views for each.  
+ 
+### Things to try differently on future projects
+- Use [Cypress](https://docs.cypress.io/guides/getting-started/) instead of Selenium for FTs
+  - I think it also may be possible to use cypress to test the JS instead of QUnit 
+- Use [pytest](https://pytest-django.readthedocs.io/en/latest/) instead of the built-in test runner 
 
 ---
 
