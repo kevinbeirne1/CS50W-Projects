@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create Entry - Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+    <h1>Add Task:</h1>
+    <form action="{% url 'add' %}" method="post">
+        {% csrf_token %}
+        {{ form.entry_name }}
+        <textarea name="entry_markdown">
+            {{ form.entry_markdown}}
+        </textarea>
+        <input type="submit">
+    </form>
+    <a href="{% url 'index' %}">View Tasks</a>
+
+{% endblock %}

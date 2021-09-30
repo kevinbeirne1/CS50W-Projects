@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ search_name }} - Search results - Encyclopedia
+{% endblock %}
+
+
+{% block body %}
+
+    <h1>Search Results</h1>
+    <form action="{% url 'search'%}" method="get">
+        <input type="text" name="q" placeholder="Search Encyclopedia" value={{search_name }}>
+        <input type="submit">
+    </form>
+
+    {% for page in partial_matches %}
+         <li><a href="{% url 'entry' page %}">{{ page }}</a> </li>
+    {% empty %}
+        <h3>No Matches Found</h3>
+    {% endfor %}
+
+{% endblock %}}
