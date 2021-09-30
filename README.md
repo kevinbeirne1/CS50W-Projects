@@ -1,11 +1,12 @@
 # CS50W-Projects
-Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. Course is structured so that each project increases in complexity and  requires additional skills 
+Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. Course is structured so that each project increases in complexity and requires additional skills 
 
 ## [Project 0 - Search](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_0-Search)
 Create clones of Google Search, Google Image Search, and Google Advanced Search webpages using HTML and CSS/SCSS
 
 ## [Project 1 - Wiki](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_1-Wiki)
 Create Wiki site 
+
 __New Skills Required__
 - Django 
   - Templates 
