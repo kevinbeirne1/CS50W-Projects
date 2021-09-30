@@ -1,0 +1,21 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+   <h2>Create New Post</h2>
+
+    <form action="{% url 'network:new_post' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="hidden" name="creator" value={{ user.id }}>
+<!--            {{ form.creator.label }}{{ form.creator.as_p }}-->
+
+            <textarea name="content"></textarea>
+<!--            <input autofocus class="form-control" type="text" name="username" placeholder="Username">-->
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+
+{% endblock %}

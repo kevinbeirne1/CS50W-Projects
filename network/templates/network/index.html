@@ -1,0 +1,57 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    {% block extra_content %}
+    {% endblock %}
+
+    {% for post in page_obj %}
+        <script>
+            var csrftoken = '{{ csrf_token }}'
+        </script>
+        <div class="container">
+            <div  class="post_media" data-post-id={{ post.id }}>
+                <div id="content">{{ post.content }}</div>
+                <textarea id="content_textarea">{{ post.content }}</textarea>
+                <div id="creator_element">Post Creator: <a id="creator" href="{% url 'network:profile' post.creator %}">{{ post.creator }}</a></div>
+                <div id="pub_date">Date Posted: {{ post.pub_date |date:'d, M, Y H:i' }}</div>
+                <div id="likes">
+                    Likes: <span id="likes_count">{{ post.likes_count }}</span>
+
+                    {% if user != post.creator and user.is_authenticated %}
+
+                        {% if user in post.users_that_like %}
+                            <input id="user_likes_post" type="hidden" value="true">
+                        {% else %}
+                            <input id="user_likes_post" type="hidden" value="false">
+                        {% endif %}
+                        <button class="btn btn-sm btn-outline-primary" id="like">Like</button>
+                        <button class="btn btn-sm btn-outline-primary" id="unlike">Unlike</button>
+                    {% endif %}
+                </div>
+                {% if user == post.creator %}
+                    <button class="btn btn-sm btn-outline-primary" id="edit">Edit</button>
+                    <button class="btn btn-sm btn-outline-primary" id="save">Save</button>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+
+    <div class="pagination">
+         <span class="step-links">
+             {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ page_obj.previous_page_number}}">Previous</a>
+             {% endif %}
+
+             <span class="current">
+                 Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+             </span>
+
+             {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+             {% endif %}
+         </span>
+    </div>
+
+{% endblock %}
