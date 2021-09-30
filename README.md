@@ -3,12 +3,16 @@ Design a front-end for Google Search, Google Image Search, and Google Advanced S
 
 ---
 
-### Project Description
-This project seemed aimed at introducing users to HTML and CSS. It was very instructive to look at an established website and attempt to reverse engineer it's CSS. 
+## _Project Description_
+This project introducse HTML and CSS. It was very instructive to look at an established website and attempt to reverse engineer it's CSS. 
+
+### Skills Utilized
+- HTML
+- SCSS/CSS
 
 ---
 
-### Project Specifications
+## _Project Specifications_
 
 Your website must meet the following requirements.
 
