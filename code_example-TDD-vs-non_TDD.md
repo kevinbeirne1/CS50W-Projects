@@ -1,5 +1,6 @@
-## an example of how using TDD led to simpler code 
+## An example of how using TDD led to simpler code 
 __Background__
+
 I started working on this project prior to reading the book TDD with Python. In my initial work on the project I started immediately generating the models that I assumed that I would need to achieve my requiements. In the second instance I attempted to use the TDD method of outside-in development and thus the models were the last Model-View-Template architecture that I created
 
 ### Non TDD models
