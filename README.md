@@ -5,7 +5,7 @@ Design a Wikipedia-like online encyclopedia.
 
 ## _Project Description_
 
-This project introduces creating a website using the Django framework. Project 0 involved programming everything directly into the HTML. In this project we are introduced to Templates and Views, which are key parts of Django's Model-Template-Views architectural pattern. We are also introduced to Django Forms and how django allows for easy rendering of forms in templates.
+This project introduces creating a website using the Django framework. The Project 0 website was programmed directly into the HTML. In this project we are introduced to creating a website using Django Templates and Views. Templates and Views are key parts of Django's Model-Template-Views architectural pattern. We are also introduced to Django Forms, and how django allows for easy rendering of forms in templates including entry validation.
 
 #### Skills Utilized
 - Django
