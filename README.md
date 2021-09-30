@@ -26,7 +26,7 @@ Design a Twitter-like social network website for making posts and following user
 
 Project is culmination of course and requires all skills developed in previous projects. In addition the following were utilised during the completion of the project
 - Outside-In Test Driven Development design principles, including
-  - Functional Tests & Unit Tests using Django StaticLiveServerTestCase/Testcase
+  - Functional Tests & Unit Tests using Django StaticLiveServerTestCase TestCase
   - factory_boy for populating test database
   - JS Testing with QUnit
 - Django Class-Based-Views
