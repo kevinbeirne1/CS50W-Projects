@@ -4,22 +4,34 @@ Repo for the projects created for Harvard CS50W course. Each project is on a sep
 ## [Project 0 - Search](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_0-Search)
 Create clones of Google Search, Google Image Search, and Google Advanced Search webpages. 
 
-Project requires HTML and CSS/SCSS
+Project requires:
+- HTML 
+- CSS/SCSS
 
 ## [Project 1 - Wiki](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_1-Wiki)
 Design a Wikipedia-like online encyclopedia. 
 
-Project adds Django Templates and Views
+Project adds: 
+- Django 
+  - Templates 
+  - Views
 
 ## [Project 2 - Commerce](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_2-Commerce)
 Design an eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.” 
 
-Project adds Django Models and Admin
+Project adds: 
+- Django 
+  - Models 
+  - Admin
 
 ## [Project 3 - Mail](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_3-Mail)
 Design a front-end for an email client that makes API calls to send and receive emails. 
 
-Projects adds Javascript: Event Listeners, HTML DOM manipulation and API Fetch requests
+Projects adds:
+- Javascript 
+  - Event Listeners 
+  - HTML DOM manipulation 
+  - API Fetch requests
 
 ## [Project 4 - Network](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_4-Network)
 Design a Twitter-like social network website for making posts and following users. 
@@ -30,3 +42,4 @@ This project pulls required all skills developed in previous projects. In additi
   - factory_boy for populating test database
   - JS Testing with QUnit
 - Django Class-Based-Views
+- Bootstrap
