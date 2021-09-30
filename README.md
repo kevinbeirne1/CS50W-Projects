@@ -2,35 +2,23 @@
 Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. Course is structured so that each project increases in complexity and requires additional skills 
 
 ## [Project 0 - Search](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_0-Search)
-Create clones of Google Search, Google Image Search, and Google Advanced Search webpages using HTML and CSS/SCSS
+Create clones of Google Search, Google Image Search, and Google Advanced Search webpages. Project requires HTML and CSS/SCSS
 
 ## [Project 1 - Wiki](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_1-Wiki)
-Create Wiki site 
-
-##### New Skills Required
-- Django 
-  - Templates 
-  - Views
+Design a Wikipedia-like online encyclopedia. Project adds Django Templates and Views
 
 ## [Project 2 - Commerce](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_2-Commerce)
-Create eBay like auctions site
-_New Skills Required_
-- Django 
-  - Models 
-  - Admin
+Design an eBay-like e-commerce auction site that will allow users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist.” Project adds Django Models and Admin
 
 ## [Project 3 - Mail](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_3-Mail)
-Design a front-end for an email client that makes API calls to send and receive emails. 
-_New Skills Required_
-- Javascript
-  - Event Listeners
-  - HTML DOM editing
-  - Database Fetch requests   
+Design a front-end for an email client that makes API calls to send and receive emails. Projects adds Javascript: Event Listeners, HTML DOM manipulation and API Fetch requests
 
 ## [Project 4 - Network](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_4-Network)
-  Create a twitter like social media app. That allows users to create/edit posts, follow other users, like/unlike posts. 
-  - Implemented with Outside-In Test Driven Development design principles.
-  - Utilizes 
-    - Javascript/JQuery
-    - Django Models, Forms & Class-Based-View
-    - Bootstrap and SASS/SCSS
+Design a Twitter-like social network website for making posts and following users. Project is culmination of course and requires all skills developed in previous projects. 
+
+In addition the following were utilised during the completion of the project
+- Outside-In Test Driven Development design principles, including
+  - Functional Tests & Unit Tests using Django StaticLiveServerTestCase/Testcase
+  - factory_boy for populating test database
+  - JS Testing with QUnit
+- Django Class-Based-Views
