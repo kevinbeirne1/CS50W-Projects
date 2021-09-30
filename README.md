@@ -24,9 +24,7 @@ Projects adds Javascript: Event Listeners, HTML DOM manipulation and API Fetch r
 ## [Project 4 - Network](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_4-Network)
 Design a Twitter-like social network website for making posts and following users. 
 
-Project is culmination of course and requires all skills developed in previous projects. 
-
-In addition the following were utilised during the completion of the project
+Project is culmination of course and requires all skills developed in previous projects. In addition the following were utilised during the completion of the project
 - Outside-In Test Driven Development design principles, including
   - Functional Tests & Unit Tests using Django StaticLiveServerTestCase/Testcase
   - factory_boy for populating test database
