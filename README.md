@@ -3,7 +3,7 @@ Design a Wikipedia-like online encyclopedia.
 
 ---
 
-### Project Description
+## _Project Description_
 #### Skills Utilized
 - Django
   - Templates
@@ -15,7 +15,7 @@ This project seemed aimed at introducing users to HTML and CSS. It was very inst
 
 ---
 
-### Project Specifications
+## _Project Specifications_
 Complete the implementation of your Wiki encyclopedia. You must fulfill the following requirements:
 
 #### Entry Page: 
