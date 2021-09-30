@@ -9,7 +9,6 @@ This project seemed aimed at introducing users to HTML and CSS. It was very inst
 ---
 
 ### Project Specifications
-Source [https://cs50.harvard.edu/web/2020/projects/0/search/](https://cs50.harvard.edu/web/2020/projects/0/search/)
 
 Your website must meet the following requirements.
 
@@ -34,7 +33,8 @@ Your website must meet the following requirements.
 - Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link should take users directly to the first Google search result for the query, bypassing the normal results page.
 #### Aesthetics 
 - The CSS you write should match Google’s own aesthetics as best as possible.
-
+- 
+Source [https://cs50.harvard.edu/web/2020/projects/0/search/](https://cs50.harvard.edu/web/2020/projects/0/search/)
 ---
 
 Repo for the projects created for Harvard CS50W course. Each project is on a separate branch. [Main Branch](https://github.com/kevinbeirne1/CS50W-Projects) 
