@@ -6,7 +6,9 @@ Repo for the projects created for Harvard CS50W course. Each project is on a sep
 ### Project Description
 This project seemed aimed at introducing users to HTML and CSS. It was very instructive to look at an established website and attempt to reverse engineer it's CSS. 
 
-### Specifications
+---
+
+### Project Specifications
 Source [https://cs50.harvard.edu/web/2020/projects/0/search/](https://cs50.harvard.edu/web/2020/projects/0/search/)
 
 Your website must meet the following requirements.
