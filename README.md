@@ -5,7 +5,7 @@ Design an eBay-like e-commerce auction site that will allow users to post auctio
 
 ## _Project Description_
 
-This project introduces Django Models. Project 1 - Wiki output each Entry to a new `.md` file. In this project we use Django Models to create SQL databases to store/share our information. We also build on our knowledge of forms to create ModelForms for easy creation/update of Model instances 
+This project introduces Django Models. In Project 1 each new wiki Entry was written to a new `.md` file. In this project we use Django Models to create SQL databases to store/share our information. We also build on our knowledge of forms to create ModelForms for easy creation/update of Model instances 
 
 #### Skills Utilized
 - Django
