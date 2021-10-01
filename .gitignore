@@ -1,5 +1,7 @@
 .idea
 config.jsgit
+deploy/
+
 */screendumps/
 
 # Byte-compiled / optimized / DLL files
