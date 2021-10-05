@@ -36,7 +36,7 @@ Projects adds:
 ## [Project 4 - Network](https://github.com/kevinbeirne1/CS50W-Projects/tree/Project_4-Network)
 Design a Twitter-like social network website for making posts and following users.
 
-Live Site: [network.kbeirne.com](https://network.kbeirne.com)
+**Live Site**: [network.kbeirne.com](https://network.kbeirne.com)
 
 This project pulls required all skills developed in previous projects. In addition the following were utilised during the completion of the project
 - Outside-In Test Driven Development design principles, including
