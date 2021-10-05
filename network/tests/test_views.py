@@ -159,7 +159,7 @@ class RegisterViewTest(TestCase):
             'password1': 'P@ssword!',
             'password2': 'P@ssword',
         })
-        self.assertContains(response, escape("The two password fields didnt match."))
+        self.assertContains(response, "The two password fields didn’t match.")
 
     def test_register_passes_error_message_if_duplicate_username(self):
         """
