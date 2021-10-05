@@ -1,6 +1,8 @@
 # CS50W - Project 4 - Network
 Design a Twitter-like social network website for making posts and following users.
 
+See [network.kbeirne.com](network.kbeirne.com) for the live website
+
 ---
 
 ## _Project Overview_
@@ -27,6 +29,8 @@ This project is the culmination of all that we've learned up to this point. We a
 - HTML
 - SCSS/CSS, including [Bootstrap](https://getbootstrap.com/docs/)
 
+- ansible-playbook (Automated website deployment)
+  - See [ansible deployment](https://github.com/kevinbeirne1/ansible_deploy_template) for detailed description of the ansible playbook 
 
 ### Test Driven Development
 In the accompanying course [lecture](https://cs50.harvard.edu/web/2020/notes/7/) we were briefly introduced to Test-Driven-Development. Given the brief introduction and my sparse knowledge of testing, I decided to take a detour from the course to complete the excellent book [Test-Driven Development with Python](https://www.obeythetestinggoat.com/). I then attempted to utilise the TDD methodology in completing this project. 
@@ -47,7 +51,7 @@ Working from the Outside-In TDD was really beneficial for me. I had initially st
   - My currently level of knowledge of Bootstrap capabilities is relatively low, and I prioritised working on other aspects of the project instead of improving my Bootstrap
 - Write the Javascript in React
   - JQuery was used in the TDD book and used it in this project because of familiarity. React also seems commonly used library and would be useful to learn
-- Deploy the project to a server for ease of displaying my skills
+- ~~Deploy the project to a server for ease of displaying my skills~~
 - Refactor the 4 separate like/unlike and follow/unfollow views into 2 views as most of their code is duplicated
   - Quick and dirty method was to create separate views for each.  
  
