@@ -21,7 +21,9 @@ import dj_database_url
 env = environ.Env(
     # Set casting, default value
     DEBUG=(bool, False),
-    SITENAME=(str, '')
+    SITENAME=(str, ''),
+    SECRET_KEY=(str, 'CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead).'),
+    DB_PASSWORD=(str, "12345678"),
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -52,7 +54,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenose.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -156,3 +157,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+django_heroku.settings(locals())
+
