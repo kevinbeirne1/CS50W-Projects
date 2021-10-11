@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import sys
 from pathlib import Path
 
-import dj_database_url
 import environ
 from django.contrib import messages
 import django_heroku
@@ -39,7 +38,7 @@ DEBUG = env('DEBUG')
 # Raises Django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
 SECRET_KEY = env('SECRET_KEY')
 
-ALLOWED_HOSTS = ['localhost',]
+ALLOWED_HOSTS = [env('SITENAME')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
@@ -95,10 +94,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# Heroku Update database configuration from $DATABASE_URL.
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
 
 AUTH_USER_MODEL = "network.User"
 
