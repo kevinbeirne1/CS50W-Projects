@@ -14,11 +14,14 @@ from pathlib import Path
 
 import environ
 from django.contrib import messages
+import django_heroku
 
 env = environ.Env(
     # Set casting, default value
     DEBUG=(bool, False),
-    SITENAME=(str, "")
+    SITENAME=(str, ""),
+    SECRET_KEY=(str, 'CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead).'),
+
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -166,3 +169,5 @@ MESSAGE_TAGS = {
 
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = '/login/'
+
+django_heroku.settings(locals())
