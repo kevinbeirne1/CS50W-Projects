@@ -20,8 +20,6 @@ env = environ.Env(
     # Set casting, default value
     DEBUG=(bool, False),
     SITENAME=(str, ""),
-    SECRET_KEY=(str, 'CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead).'),
-
 )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,7 +36,7 @@ DEBUG = env('DEBUG')
 # Raises Django's ImproperlyConfigured exception if SECRET_KEY not in os.environ
 SECRET_KEY = env('SECRET_KEY')
 
-ALLOWED_HOSTS = [env('SITENAME')]
+ALLOWED_HOSTS = ['localhost']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
