@@ -1,5 +1,3 @@
-ansible==4.6.0
-ansible-core==2.11.5
 asgiref==3.3.4
 cffi==1.14.6
 coverage==5.5
