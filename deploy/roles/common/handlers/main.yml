@@ -1,0 +1,13 @@
+
+- name: restart nginx
+  service: name=nginx state=restarted
+  listen: "restart nginx"
+  become: yes
+
+- name: restart gunicorn
+  systemd:
+      name: gunicorn-{{ HOST }}
+      daemon_reload: yes
+      enabled: yes
+      state: restarted
+  become: yes
