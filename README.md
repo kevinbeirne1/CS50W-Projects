@@ -1,12 +1,29 @@
 # CS50W - Project 4 - Network
 Design a Twitter-like social network website for making posts and following users.
 
-See [network.kbeirne.com](network.kbeirne.com) for the live website
+See [http://network.kbeirne.com/](http://network.kbeirne.com/) for the live website
 
 ---
 
+Contents
+========
+
+* [Project Overview](#_project-overview_)
+  * [Skills Utilized](#skills-utilized)
+  * [Test Driven Development](#test-driven-development)
+  * [Deployment History](#deployment-history)
+  * [Things to work on?](#things-to-work-on)
+  * [Things to try differently on future projects](#things-to-try-differently-on-future-projects)
+* [Project Specifications](#_project-specifications_)
+* [Contributing](#_contributing_)
+* [Deploying](#_deploying_)
+  * [Deploying to server with Ansible](#deploying-to-server-with-ansible)
+  * [Deploying using heroku](#deploying-using-heroku)
+
 ## _Project Overview_
-This project is the culmination of all that we've learned up to this point. We are given templates for Registration/Log In of users and are required to develop all the other aspects of the website. 
+This project is the culmination of all that the course has covered up to this point. 
+I was provided with templates for Registration/Log In of users, and I was then required to 
+develop all the other aspects of the website as per the [project specs](#_project-specifications_). 
 
 
 ### Skills Utilized
@@ -43,6 +60,10 @@ I started by:
 -  Repeating for each of the requirements
 
 Working from the Outside-In TDD was really beneficial for me. I had initially started this project prior to reading the TDD above and was essentially trying an inside-out approach. I started by generating my models, and then writing tests for the code I'd already written. This led to me massively overengineering my models and making them more complicated than they needed to be. See [code_example-TDD-vs-non_TDD.md](https://github.com/kevinbeirne1/CS50W-Projects/blob/Project_4-Network/code_example-TDD-vs-non_TDD.md) for an example of this. 
+
+### Deployment History
+Initial versions of the live website used this template to deploy the project to a Digital Ocean droplet using the ansible playbook in `deploy/`.
+Later versions have been moved to heroku to take advantage of their free developer tier.
 
 ### Things to work on?
 - At this poing I do not use any mocks in my testing
@@ -93,6 +114,37 @@ Users should be able to click a button or link on any post to toggle whether or 
 - Using JavaScript, you should asynchronously let the server know to update the like count (as via a call to fetch) and then update the post’s like count displayed on the page, without requiring a reload of the entire page.
 
 Source - [https://cs50.harvard.edu/web/2020/projects/4/network/](https://cs50.harvard.edu/web/2020/projects/4/network/)
+
+---
+
+## _Contributing_
+
+1. Clone the repo `$ git clone -b Project_4-Network --single-branch https://github.com/kevinbeirne1/CS50W-Projects.git <directory_name>`
+2. Navigate to the project directory `$ cd <project_directory>`
+3. Make a new branch `$ git checkout -b [name_of_new_branch]`
+4. Add a feature, fix a bug, or refactor some code :)
+5. Write/update tests for the changes you made, if necessary.
+6. Run tests and make sure all tests pass: `python manage.py test`.
+7. Update `README.md` if necessary.
+8. Open a Pull Request with a comprehensive description of changes.
+
+---
+
+## _Deploying_
+
+### Deploying to server with Ansible
+- Open/navigate a terminal window in the `deploy/` directory on your system.
+- Update `REPO_BRANCH` in `deploy/site.yml` to your <branch_name>
+- Run the playbook using `$ ansible-playbook site.yml -kK -i staging`
+
+Further information about the playbook can be found at [ansible deployment template repo](https://github.com/kevinbeirne1/ansible_deploy_template)
+
+### Deploying using Heroku
+- In root directory run `$ heroku create`
+- Push the branch to heroku `$ git push heroku <branch_name>:main`
+- Add a SECRET_KEY to the project `$ heroku config: set SECRET_KET=<random_secret_key>`
+- Open the website `$ heroku open`
+
 
 ---
 
